@@ -1,0 +1,6 @@
+footer{
+    height: fit-content;
+    width: auto;
+    background-color: var(--accent2);
+    padding: 0.5%;
+}

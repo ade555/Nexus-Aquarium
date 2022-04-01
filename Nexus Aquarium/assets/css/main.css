@@ -1,0 +1,753 @@
+/* ****** ALL CSS VARIABLES AND GENERAL STYLINGS TO BE USED IN THE PROJECT ARE DEFINED IN THIS FILE ****** */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+:root{
+    --accent1: #545863;
+    --accent2: #646771;
+    --blue: #00B2D0;
+}
+/* ****** HOVER EFFECTS FOR LINKS ****** */
+.link-hover:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease .5s;
+}
+
+/* HOME PAGE CUSTOM STYLES */
+
+/* ****** SHOWCASE AREA WITH VIDEO AT BACKGROUND ****** */
+#full-screen-video{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+  #homeVideo{
+      z-index: -1;
+      position: absolute;
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+.home-content{
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    width: auto;
+}
+.home-content h1{
+    font-weight: 500;
+    font-size: 60px;
+}
+.home-content p{
+    font-weight: 500;
+    font-size: 30px;
+}
+.home-buttons a{
+    border-radius: 50px;
+    width: 45%;
+}
+#ticket-link{
+    background-color: var(--blue);
+    color: #000;
+}
+.top-events-link{
+    background-color: #fff;
+    color: #000;
+}
+.top-events-link:hover{
+    background-color: var(--blue);
+    color: #000;
+    transition: ease .5s;
+}
+#ticket-link:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease-in .5s;
+}
+
+/* ****** RESPONSIVE STYLING FOR SHOWCASE AREA WITH VIDEO AT BACKGROUND ****** */
+@media (max-width:767px) {
+    .home-content{
+        margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .home-content{
+        left: 5%;
+    }
+  .home-content h1{
+      font-size: 30px;
+  }
+  .home-content p{
+      font-size: 20px;
+  }
+  .home-buttons a{
+      display: block;
+      margin: 2% auto;
+      width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    .home-content{
+        margin-left: 20%;
+        margin-bottom: 10%;
+        top: 40%;
+    }
+}
+
+@media (min-width:992px) {
+    .home-content{
+        margin-left: 25%;
+    }
+}
+/* ****** SHOWCASE AREA WITH VIDEO AT BACKGROUND END ****** */
+
+
+/* ****** SECTION WITH ID OF ABOUT ****** */
+.about-box{
+    width: auto;
+    height: fit-content;
+    background: #fff;
+    display: block;
+}
+.about-text{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+.about-text p{
+    text-align: justify;
+}
+.about-box-text-info{
+    margin: 3% auto;
+}
+.about-box-text-info p{
+    font-size: 2em;
+    color: var(--accent1);
+}
+.about-box-text-info p span{
+    color: var(--accent2);
+    font-size: 0.7em;
+}
+.about-box-text-info > p{
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 10%;
+}
+.about-counter{
+    width: 45%;
+    width: 100%;
+}
+#img-lillustration{
+    height: fit-content;
+}
+#img-lillustration div{
+    height: fit-content;
+    background-color: #545863;
+}
+#img-lillustration .image-left{
+    width: auto;
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    height: 50vh;
+    margin-bottom: 2%;
+}
+#img-lillustration .icons{
+    width: 100%;
+    background-color: var(--accent1);
+    padding: 3%;
+}
+.icons-inner{
+    height: fit-content;
+    margin-bottom: 0%;
+}
+.icons-inner-div p{
+    margin-bottom: 0%;
+}
+.icons-inner-div{
+    text-align: center;
+    margin: 2% auto;
+    height: 0;
+}
+.icons-inner img{
+    width: 75%;
+}
+
+
+/* ****** RESPONSIVE STYLING FOR SECTION WITH ID OF ABOUT */
+
+/* ****** SMALLER SCREENS ****** */
+@media (max-width:768px) {
+    .about-box-text-info p{
+        font-size: 1.5em;
+    }
+    .about-box-text-info > p{
+        font-size: 2em;
+        margin-left: 0%;
+    }
+    .icons-inner img{
+        width: 50%;
+    }
+    
+}
+
+/* ****** LARGER SCREENS ****** */
+@media (min-width:992px) {
+    #img-lillustration .image-left{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 40%;
+    height: 85vh;
+    }
+    #img-lillustration .icons{
+        width: 80%;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 50;
+        margin-left: 15%;
+        height: 70vh;
+    }
+    .about-counter{
+        width: 45%;
+    }
+    .about-text{
+        width: 50%;
+        margin-left: 48%;
+    }
+    .icons-inner{
+        width: 60%;
+        margin-left: 35%;
+    }
+}
+/* ****** SECTION WITH ID OF ABOUT END ****** */
+
+
+
+
+/* ****** HOME-EVENTS SECTION ****** */
+#home-events-section h2{
+    color: var(--blue);
+    margin: 2% auto;
+}
+.events-about{
+    width: 40%;
+}
+.events-title span{
+    color: var(--blue);
+}
+.events-about h6{
+    margin-bottom: 3%;
+    font-style: italic;
+    font-size: 1.2em;
+}
+.events-about h6 span  i{
+    color: var(--blue);
+    font-size: 10px;
+    margin: auto 5px;
+}
+.events-section-inner img{
+    width: 50%;
+}
+
+/* ****** RESPONSIVE STYLING FOR HOME EVENTS SECTION ****** */
+@media (max-width:767px) {
+    .events-about{
+        width: 80vw;
+        margin: 4% auto;
+    }
+    .events-section-inner img{
+        width: 100%;
+    }
+}
+/* ****** HOME-EVENTS SECTION END ****** */
+
+
+
+/* ****** LOCATION AND MAP ****** */
+#location{
+    width: 90%;
+    margin: auto;
+}
+.location-text{
+background-color: var(--accent1);
+color: #fff;
+height: 450px;
+width: 25%;
+margin: auto;
+}
+.map-location{
+    width: 100%;
+    margin-left: 3%;
+}
+
+
+@media (max-width:767px) {
+    .location-text{
+        margin-bottom: 3%;
+        width: 60%;
+        height: 300px;
+        padding: 3% auto;
+    }
+    .map-location{
+        margin-left: 0%;
+    }
+    
+}
+/* ****** LOCATION AND MAP END ****** */
+
+
+/* ****** FISHES-IMG SECTION ****** */
+#fishes-img{
+    width: auto;
+}
+#fishes-img h1{
+    color: var(--blue);
+}
+/* ****** FISHES-IMG SECTION END ****** */
+
+
+
+/* ****** AQUATICS TABLE SECTION ****** */
+#aquatic-table{
+    height: fit-content;
+    background-color: var(--accent2);
+}
+#aquatic-table .table-div{
+    overflow-x: auto;
+}
+#aquatic-table table{
+    margin: 3% auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+#aquatic-table table td, #aquatic-table table th{
+    text-align: left;
+    border: 1px solid #000;
+    padding: 8px;
+}
+#aquatic-table table tr:nth-child(odd){
+    background-color: var(--accent1);
+}
+#aquatic-table center{
+    margin-bottom: 3%;
+}
+#aquatic-table center a{
+    color: #fff;
+    background-color: var(--blue);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#aquatic-table center a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease .5s;
+}
+.fish-slide p{
+    font-size: 17px;
+}
+
+/* ****** RESPONSIVE STYLING FOR AQUATICS TABLE SECTIION ****** */
+@media (max-width:768px) {
+    #aquatic-table table td, #aquatic-table table th{
+        padding: 4px;
+    }
+}
+/* ****** AQUATICS TABLE SECTION END ****** */
+
+
+
+
+/* ****** HOME CONTACT SECTION ****** */
+#home-contact{
+    height: fit-content;
+    padding: 3% auto;
+    width: 90%;
+    margin: 5% auto;
+    margin-top: 5%;
+}
+.home-contact-inner{
+    height: fit-content;
+    background-color: var(--accent1);
+    padding: 5%;
+}
+.home-contact-text{
+    width: 30%;
+    margin-right: 5%;
+}
+.home-contact-text h1{
+    color: var(--blue);
+}
+.contact-icons i{
+    color: var(--blue);
+}
+.home-contact-form{
+    height: fit-content;
+    background-color: var(--accent2);
+    width: 60%;
+}
+.home-contact-form form input, .home-contact-form form textarea{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 5%;
+    outline: none;
+}
+.home-contact-form input[type=submit]{
+    color: #fff;
+    background-color: var(--blue);
+    padding: 8px 20px;
+    border: #fff;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+.home-contact-form input[type=submit]:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease .5s;
+}
+.home-contact-form form label{
+    margin-bottom: 2%;
+}
+#phone-number, #email, #cvv, #expiry{
+    width: 95%;
+}
+
+/* ******RESPONSIVE STYLING FOR HOME CONTACT SECTION ****** */
+@media (max-width:768px) {
+    .home-contact-text{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    .home-contact-form{
+        width: 100%;
+    }
+}
+/* ****** HOME CONTACT SECTION END ****** */
+
+/* ************ HOMEPAGE STYLING ENDS HERE ************ */
+
+
+
+
+
+/* ****** GALLERY PAGE STYLING ****** */
+#gallery-aquatics{
+    height: fit-content;
+    padding: 3%;
+    margin-top: 30vh;
+}
+.control-buttons{
+    margin-left: 80vw;
+    margin-top: 2%;
+}
+.gallery-slide img{
+    height: 400px;
+    width: 50vw;
+    margin: auto;
+    padding: 3%;
+}
+.fish-slide img{
+    height: 60vh;
+    width: 30vw;
+    margin: auto;
+    padding: 3%;
+    
+}
+#aquatics{
+    margin-top: 10vh;
+}
+.aquatics-details{
+    margin: 15vh auto;
+}
+.aquatics-details img{
+    width: 35vw;
+}
+#gallery-aquatics h2, #gallery-aquatics i{
+    color: var(--blue);
+}
+.table-scroll{
+    height: 85vh;
+    overflow-y: scroll;
+}
+.table-list{
+    background-color: var(--accent1) !important;
+}
+
+
+/* ****** RESPONSIVE STYLING FOR GALLERY PAGE ****** */
+@media (max-width:767px) {
+    .gallery-slide img{
+        height: 250px;
+        width: 50vw;
+        padding: 7%;
+    }
+    #gallery-aquatics{
+        margin-top: 10vh;
+    }
+    .aquatics-details img{
+        width: 100%;
+    }
+    .lg-shark{
+        display: none !important; 
+    }
+    .fish-slide img{
+        height: 30vh;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    #gallery-aquatics{
+        margin-top: 10vh;
+    }
+    .fish-slide{
+        flex-wrap: wrap !important;
+    }
+    .fish-slide img{
+        height: 30vh;
+    }
+}
+@media (min-width:992px) {
+    .sm-shark{
+        display: none !important;
+    }
+    .fish-slide{
+        flex-wrap: wrap !important;
+    }
+    .gallery-slide img{
+        width: 35vw;
+    }
+}
+/* ****** GALLERY PAGE STYLING ENDS ****** */
+
+
+/* ****** EVENTS PAGE STYLING ****** */
+#events-booking{
+    margin: auto;
+    margin-top: 20vh;
+    height: fit-content;
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.events-booking-inner{
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    background-color: var(--accent1);
+    padding: 3%;
+}
+.events-booking-inner img{
+    width: 40%;
+}
+.ticket-form h2{
+    color: var(--blue);
+    font-weight: bold;
+}
+.ticket-form input{
+    outline: none;
+    padding: 5px 8px;
+    width: 100%;
+    margin-right: 2%;
+    color: #000;
+}
+.ticket-form select, .ticket-form input{
+    border-radius: 15px !important;
+    border: none;
+}
+.ticket-form select option{
+    color: #000;
+}
+.checkout input[type=submit]{
+    width: 50%;
+    margin: auto;
+    padding: 5px 15px;
+    background-color: var(--blue);
+}
+.checkout input[type=submit]:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease-in .5s;
+}
+.events-link{
+    padding: 2% 5%;
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: #000;
+}
+.events-link:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease-in .5s;
+}
+.events-control-buttons{
+    position: relative;
+    bottom: 8vh;
+}
+.modal-title{
+    padding: 3% 10%;
+    background-color: var(--blue);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 4px 0px #00000080;
+
+}
+#events-upcoming{
+    width: 90% !important;
+    margin: auto !important;
+}
+.events-upcoming-inner{
+    width: auto;
+}
+/* ****** OCEAN CAMPAIGN ****** */
+#ocean-campaign{
+    width: 90%;
+    margin: 3% auto;
+    height: fit-content;
+}
+.ocean-campaign-inner{
+    margin: auto;
+    width: 100%;
+}
+.ocean-campaign-text{
+    width: 40%;
+    margin: auto;
+    text-align: justify;
+}
+.ocean-campaign-text h3{
+    color: var(--blue);
+}
+.ocean-campaign-img{
+    width: 50%;
+}
+.ocean-campaign-inner a{
+    color: #fff;
+    background-color: var(--blue);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+/* ****** OCEAN CAMPAIGN ****** */
+
+/* ****** RESPONSIVE STYLING FOR EVENTS PAGE ****** */
+@media (max-width:767px) {
+    .lg-screen-campaign{
+        display: none !important;
+    }
+    .ocean-campaign-img{
+        width: 100%;
+    }
+    .ocean-campaign-text{
+        width: 100%;
+    }
+    .events-booking-inner img{
+        width: 100%;
+    }
+    .control-buttons{
+        margin-left: 60vw;
+    }
+    #events-booking{
+        margin-top: 10vh;
+    }
+}
+@media (min-width:768px) and (max-width: 991px) {
+    #events-booking{
+        margin-top: 10vh;
+    }
+}
+@media (min-width: 768px) {
+    .small-screen-campaign{
+        display: none !important;
+    }
+    .ocean-campaign-img{
+        margin-left: 0%;
+    }
+}
+/* ****** EVENTS PAGE STYLING END ****** */
+
+
+/* ************ CONTACT PAGE STYLING STARTS ************ */
+#feedback-section{
+    margin: auto;
+    margin-top: 30vh;
+    height: fit-content;
+    width: 90%;
+    background-color: var(--accent1);
+    padding: 5%;
+    margin-bottom: 10%;
+}
+#feedback-section > h2{
+    color: var(--blue);
+    font-size: 3em;
+}
+.main-contact-form > p{
+    font-size: 2em;
+}
+.main-contact-form{
+    margin: auto;
+}
+.main-contact-form select{
+    background-color: var(--accent2);
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin: 5% auto;
+    outline: var(--accent2);
+    border-radius: 0;
+}
+.main-contact-form select option{
+    font-size: 16px;
+}
+@media (max-width:767px) {
+    #feedback-section{
+        margin-top: 10vh;
+    }
+    #feedback-section > h2{
+        font-size: 2em;
+    }
+    .main-contact-form > p{
+        font-size: 1em;
+    }
+    .main-contact-form select option{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    #feedback-section{
+        margin-top: 10vh;
+    }
+    .main-contact-form select option{
+        font-size: 12px;
+    }
+}
+/* ************ CONTACT PAGE STYLING ENDS ************ */

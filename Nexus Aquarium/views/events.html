@@ -1,0 +1,140 @@
+<!-- ****** THE BELOW DIV IS USED IN THE ROUTING TO ENABLE EASY NAVIGATION TO SCROLL BACK TO THE TOP ****** -->
+<div id="events-top" style="height: 20px;"></div>
+
+
+<section id="events-booking">
+    <div class="events-booking-inner d-md-flex align-items-center justify-content-evenly">
+        <img src="../assets/images/svgs/events-illustration.svg" alt="book event">
+        <div>
+            <div class="ticket-form p-3">
+                <h2 class="mb-3">Book A Ticket</h2>
+                <h3 class="mb-4">Buy your tickets for events or tours</h3>
+                <form>
+                   <div class="d-flex align-items-center justify-content-between my-4">
+                        <input type="text" placeholder="name" required>
+                        <select class="form-select" required>
+                            <option selected value="">Event</option>
+                            <option value="1">Oceanology</option>
+                            <option value="2">Nexus Tour</option>
+                            <option value="3">World Ocean Day</option>
+                        </select>
+                   </div>
+                   <div class="d-flex align-items-center justify-content-between my-4">
+                        <input type="date" name="purchase-date" required>
+                        <select class="form-select" required>
+                            <option selected value="">Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <input type="email" name="email" placeholder="email address" required>
+                    <center class="my-3 checkout"><input type="submit" value="Checkout"></center>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home-events-section events-upcoming" ng-controller="eventsController">
+    <h2 class="text-center">Upcoming Events</h2>
+    <div class="events-section-inner">
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img.jpg" alt="oceanology" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> Oceanology <span>"</span></h3>
+          <h6 class="text-dark">Seminar By Dr Adarsh Unnati <span><i class="fa fa-square" aria-hidden="true"></i></span> 13th May, 2022</h6>
+          <p class="text-dark">Join Dr.Adarsh Unnati all the way from India as he educates students on what oceanology really means and how important it is to marine life.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img2.jpg" alt="nexus tour" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> Nexus Tour <span>"</span></h3>
+          <h6 class="text-dark">Aquarium Tour by The Nexus Team <span><i class="fa fa-square" aria-hidden="true"></i></span> 18th May, 2022</h6>
+          <p class="text-dark">Our team of tour experts will be up and ready to take pre-school students on a tour inside the aquarium on t18th May, 2022. The experience promises to be memorable.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img3.jpg" alt="oceanology" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> World Ocean Day <span>"</span></h3>
+          <h6 class="text-dark">Nexus Aquarium <span><i class="fa fa-square" aria-hidden="true"></i></span> 8th June, 2022</h6>
+          <p class="text-dark">On 8th June, 2022 we invite you to join us as we celebrate world ocean day. We will be creating more awareness about the event and give talks on saving the ocean.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+    </div>
+    <div class="control-buttons events-control-buttons">
+      <i class="fa fa-arrow-left mx-3" id="events-previous" style="color: var(--blue);"></i>
+      <i class="fa fa-arrow-right mx-3" id="events-next" style="color: var(--blue);"></i>
+  </div>
+</section>
+
+  <!-- ****** OCEAN CAMPAIGN SECTION ****** -->
+<section id="ocean-campaign">
+  <div class="ocean-campaign-inner d-flex align-items-center justify-content-evenly lg-screen-campaign p-2">
+      <img src="/assets/images/save-ocean.jpg" alt="save the ocean" class="ocean-campaign-img">
+    <div class="ocean-campaign-text">
+      <h3 class="mb-3">Save the Ocean</h3>
+      <p class="text-dark">We are on a journey to save the lives under water. Consider joining us to help reduce the rate of death of aquatic lives in the ocean by donating to our account.</p>
+      <a href="#" class="link-hover" data-bs-toggle="modal" data-bs-target="#donateModal">Donate</a>
+    </div>
+  </div>
+
+  <!-- ****** the below div is to be displayed only on small screens ******* -->
+  <div class="ocean-campaign-inner d-block align-items-center justify-content-evenly small-screen-campaign">
+    <div class="ocean-campaign-text">
+      <h3 class="mb-3">Save the Ocean</h3>
+      <p class="text-dark">We are on a journey to save the lives under water. Consider joining us to help reduce the rate of death of aquatic lives in the ocean by donating to our account.</p>
+    </div>
+    <div class="ocean-campaign-img mb-3">
+      <img src="/assets/images/save-ocean.jpg" alt="save the ocean" width="100%">
+    </div>
+    <center>
+      <a href="#" class="link-hover" data-bs-toggle="modal" data-bs-target="#donateModal">Donate</a></center>
+  </div>
+
+  <!-- ****** MODAL FOR OCEAN CAMPAIGN DONATION ****** -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: var(--accent2);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donateModalLabel">E-payment</h5>
+      </div>
+      <div class="modal-body">
+        <div class="home-contact-form p-3" style="width: 100%;">
+          <form>
+            <label for="card-name">Card Name</label>
+            <input type="text" name="card-name" id="name" required>
+            <label for="card-number">Card Number</label>
+            <input type="number" name="card-number" id="number" required>
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <label for="cvv">CVV</label>
+                <input type="number" name="cvv" id="cvv" required>
+              </div>
+              <div>
+                <label for="expiry">Expiry Date</label>
+                <input type="date" name="expiry" id="expiry" required>
+              </div>
+            </div>
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" required>
+          <center><input type="submit" value="Pay"></center>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="link-hover py-2 px-3" data-bs-dismiss="modal" id="ticket-link" style="border-radius: 20px;">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ****** MODAL FOR OCEAN CAMPAIGN DONATION ****** -->
+</section>
+<!-- ****** OCEAN CAMPAIGN SECTION END ****** -->

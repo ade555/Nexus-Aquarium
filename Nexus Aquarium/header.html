@@ -1,0 +1,53 @@
+<!-- ****** NAVIGATION ****** -->
+<div id="navigation" class="fixed-top" ng-controller="headerController">
+
+    <!-- ****** TOP HEADER FOR SOCIAL MEDIA AND CONTACT NUMBER****** -->
+    <header>
+        <div id="nav-top">
+            <div class="socials ms-md-5">
+                <span><span class="social-links">Socials: </span>
+                    <i class="fa fa-facebook-square mx-1"></i>
+                    <a href="https://twitter.com/SuperheroJT" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/superherojt/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram mx-1"></i></a>
+                    <a href="https://www.linkedin.com/in/ademola-thompson-455982225/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin mx-1"></i></a>
+                    <a href="http://wa.me/2349010750893" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp mx-1"></i></a>
+                </span>
+            </div>
+            <div class="header-tel">
+                <i class="fa fa-envelope mx-2 email-icon" aria-hidden="true"></i>
+                <span class="me-5">Email: <a href="mailto:support.nexusaquarium@gmail.com" class="text-white">support.nexusaquarium@gmail.com</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ****** MAIN NAVIGATION BAR ****** -->
+      <nav  id="main-nav" class="navbar">
+        <a href="#!/home" class="ms-3"><img src="assets/images/nexus-logo.png" alt="Nexus Aquarium"></a>
+        <span class="open-slide">
+            <span href="#" ng-click="openSlide()">
+              <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+              </svg>
+            </span>
+          </span>
+          <ul class="header-nav">
+            <li class="nav-item"><a href="#!/home#home-top">Home</a></li>
+            <li class="nav-item">\</li>
+            <li class="nav-item"><a href="#!/gallery#gallery-top">Gallery</a></li>
+            <li class="nav-item">\</li>
+            <li class="nav-item"><a href="#!/events#events-top">Events</a></li>
+            <li class="nav-item">\</li>
+            <li class="nav-item"><a href="#!/contact#contact-top">Contact</a></li>
+          </ul>
+    </nav>
+      <!-- ****** SIDEBAR ****** -->
+    <div id="side-menu" class="side-nav" ng-click="closeSlide()">
+        <span class="btn-close ms-auto">&times;</span>
+        <li class="nav-item"><a href="#!/home#home-top">Home</a></li>
+        <li class="nav-item"><a href="#!/gallery#gallery-top">Gallery</a></li>
+        <li class="nav-item"><a href="#!/events#events-top">Events</a></li>
+        <li class="nav-item"><a href="#!/contact#contact-top">Contact</a></li>
+    </div>
+</div>

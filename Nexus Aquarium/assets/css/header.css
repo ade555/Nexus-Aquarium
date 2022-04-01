@@ -1,0 +1,116 @@
+header{
+    height: fit-content;
+    width: auto;
+    background-color:var(--accent1);
+}
+#nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+.socials, .header-tel{
+    margin-top: 5px;
+}
+.social-links{
+    color: var(--blue);
+}
+.header-tel{
+    display: flex;
+    align-items: center;
+}
+.header-tel .email-icon{
+    color: var(--blue);
+    font-size: 1em;
+}
+
+/* ****** MAIN NAVIGATION ****** */
+#main-nav{
+    width: auto;
+    overflow:hidden;
+    height:70px; 
+    background-color: var(--accent2);
+}
+#main-nav ul li{
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+    bottom: 200%;
+    float: left;
+}
+#main-nav a{
+  float:left;
+  display:block;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration:none;
+  transition: ease-in .2s;
+}
+#main-nav ul{
+  list-style:none;
+  display: inline;
+}
+#main-nav ul li a:hover{
+    color: var(--blue);
+}
+.header-nav{
+    margin-right: 10%;
+}
+.open-slide > span{
+    margin-right: 20px;
+}
+
+
+/* ****** SIDE BAR ****** */
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    right:0;
+    background-color: var(--accent2);
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+  }
+  
+  .side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+  }
+  
+  .side-nav a:hover{
+    color:#fff;
+  }
+  
+  .side-nav .btn-close{
+    position:absolute;
+    top:0;
+    left:20px;
+    font-size:20px;
+  }
+
+@media (max-width: 767px) {
+    .header-tel .phone-icon{
+        font-size: 1em;
+    }
+    .header-nav{
+        display:none
+    }
+    #nav-top{
+        display:none
+    }
+}
+
+
+@media(min-width:768px){
+    .open-slide{
+        display:none
+    }
+  }

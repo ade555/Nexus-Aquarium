@@ -1,0 +1,335 @@
+
+<!-- ****** THE BELOW DIV IS USED IN THE ROUTING TO ENABLE EASY NAVIGATION TO SCROLL BACK TO THE TOP ****** -->
+
+<div id="home-top" style="height: 20px;"></div>
+
+<!-- ****** BANNER SECTION ****** -->
+<section id="full-screen-video">
+  <!-- ****** THE VIDEO ****** -->
+<div id="video-div">
+  <video autoplay loop="true" id="homeVideo">
+    <source src="https://res.cloudinary.com/dirwea7f6/video/upload/v1646868266/Aquarium_-_video_fguwsu.mp4" type="video/mp4">
+    </video>
+</div>
+<!-- ****** OVERLAY TEXT FOR VIDEO ****** -->
+<div class="home-content">
+  <h1 class="text-center">Nexus Aquarium</h1>
+  <p class="text-center">Protecting and Caring for Aquatic Lives</p>
+  <div class="home-buttons d-md-flex align-items-center justify-content-evenly">
+      <a href="#!/events#events-top"  id="ticket-link" class="link-hover px-5 py-1 text-center">Events</a>
+      <a href="#!/gallery#gallery-top" class="top-events-link px-5 py-1 text-center">Gallery</a>
+  </div>
+</div>
+</section>
+<!-- ****** BANNER SECTION ENDS ****** -->
+
+<!-- ****** SECTION WITH ID OF ABOUT ****** -->
+  <section id="about">
+    <div class="about-box">
+      <div class="about-box-text-info d-md-flex align-items-center justify-content-between">
+        <p class="text-center">Nexus Aquarium</p>
+        <div class="d-flex align-items-center justify-content-evenly text-center about-counter">
+          <p>2000+ <span>Aquatics</span></p>
+          <p>300+ <span>Rescues</span></p>
+        </div>
+      </div>
+      <div id="img-lillustration" class="px-3">
+        <div class="image-left">
+          <!-- contains background image via css -->
+        </div>
+        <div class="icons">
+          <div class="icons-inner d-flex align-items-center justify-content-evenly">
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/fish-bowl.svg"  alt="aquatic resources">
+              <p class="text-center">Aquatic Resources</p>
+            </div>
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/education.svg" alt="educating students">
+              <p class="text-center">Educating Students on Marine Life</p>
+            </div>
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/work-time.svg" alt="provisoin of jobs">
+              <p class="text-center">Provision of Jobs</p>
+            </div>
+          </div>
+          <div class="icons-inner d-flex align-items-center justify-content-evenly">
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/events.svg" alt="hosting events">
+              <p>Hosting Events</p>
+            </div>
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/partnership.svg" alt="partnerships">
+              <p>MUltiple Partnerships</p>
+            </div>
+            <div class="icons-inner-div">
+              <img src="/assets/images/svgs/volunteering.svg" alt="volunteering">
+              <p>volunteering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div><i class="fa fa-quote-left" style="color: var(--blue);"></i></div>
+      <p class="text-dark">Nexus Aquarium is located in city of Washington, which is the one of well known place for tourism. Aquarium is very huge and comprises of marine life animals and they are fed and breeding. It is the known centre for organizing the school events (pre-school, middle school, high school  and college), fundraises, galas and dinners.</p>
+    </div>
+  </section> 
+<!-- ****** SECTION WITH ID OF ABOUT END ****** -->
+
+
+  <!-- ****** EVENTS SECTION ****** -->
+  <section id="home-events-section" ng-controller="eventsController">
+    <h2 class="text-center">Upcoming Events</h2>
+    <div class="events-section-inner">
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img.jpg" alt="oceanology" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> Oceanology <span>"</span></h3>
+          <h6 class="text-dark">Seminar By Dr Adarsh Unnati <span><i class="fa fa-square" aria-hidden="true"></i></span> 13th May, 2022</h6>
+          <p class="text-dark">Join Dr.Adarsh Unnati all the way from India as he educates students on what oceanology really means and how important it is to marine life.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img2.jpg" alt="nexus tour" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> Nexus Tour <span>"</span></h3>
+          <h6 class="text-dark">Aquarium Tour by The Nexus Team <span><i class="fa fa-square" aria-hidden="true"></i></span> 18th May, 2022</h6>
+          <p class="text-dark">Our team of tour experts will be up and ready to take pre-school students on a tour inside the aquarium on t18th May, 2022. The experience promises to be memorable.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+      <div class="d-md-flex align-items-center justify-content-evenly p-2">
+        <img class="lazyload" data-src="../assets/images/events-img3.jpg" alt="oceanology" height="450px">
+        <div class="events-about">
+          <h3 class="events-title text-dark"><span>"</span> World Ocean Day <span>"</span></h3>
+          <h6 class="text-dark">Nexus Aquarium <span><i class="fa fa-square" aria-hidden="true"></i></span> 8th June, 2022</h6>
+          <p class="text-dark">On 8th June, 2022 we invite you to join us as we celebrate world ocean day. We will be creating more awareness about the event and give talks on saving the ocean.</p>
+          <a href="#!/events#events-booking" class="link-hover events-link">Book a ticket</a>
+        </div>
+      </div>
+    </div>
+    <div class="control-buttons events-control-buttons">
+      <i class="fa fa-arrow-left mx-3" id="events-previous" style="color: var(--blue);"></i>
+      <i class="fa fa-arrow-right mx-3" id="events-next" style="color: var(--blue);"></i>
+  </div>
+</section>
+  <!-- ****** EVENTS SECTION END ****** -->
+
+
+<!-- ****** LOCATION SECTION ****** -->
+<section id="location">
+<div class="d-md-flex align-items-center justify-content-evenly">
+  <div class="location-text text-center p-3 d-flex align-items-center justify-content-center">
+     <div>
+        <i class="fa fa-map-marker fa-3x text-center" aria-hidden="true" style="color: var(--blue);"></i>
+        <p class="text-center">Location</p>
+        <address class="text-center">
+          Nexus Aquarium is located at Washington D.C, United States of America. <br>
+          You can get directions via the map.
+        </address>
+     </div>
+  </div>
+  <div style="width: 100%;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5553352.315124828!2d-125.36954996791285!3d47.18531057573078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485e5ffe7c3b0f9%3A0x944278686c5ff3ba!2sWashington%2C%20USA!5e0!3m2!1sen!2sng!4v1646962738134!5m2!1sen!2sng" class="map-location" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+  </div>
+</div>
+</section>
+<!-- ****** LOCATION SECTION END ****** -->
+
+<!-- ****** FISHES SECTION ****** -->
+<section id="fishes-img">
+  <h1 class="text-center my-4">AQUATICS-NEXUS AQUARIUM</h1>
+  <!-- ****** AQUATICS IMAGES ****** -->
+  <div class="d-md-flex align-items-center justify-content-around fish-slide px-3">
+    <div>
+      <img data-src="../assets/images/fish1.jpg" class="lazyload text-center" alt="">
+      <p class="text-center text-dark">Alaska Pollock</p>
+    </div>
+    <div>
+      <img data-src="../assets/images/fish4.jpg" class="lazyload text-center" alt="Asian Swamp Eel">
+      <p class="text-center text-dark">Asian Swamp Eel</p>
+    </div>
+    <div>
+      <img data-src="../assets/images/shark.jpg" class="lazyload text-center" alt="Shark">
+      <p class="text-center text-dark">Shark</p>
+    </div>
+    <div>
+      <img data-src="../assets/images/fish3.jpg" a class="lazyload text-center" alt="Turtle">
+      <p class="text-center text-dark">Turtle</p>
+    </div>
+    <div>
+      <img data-src="../assets/images/goldfish.jpg" class="lazyload text-center" alt="Goldfish">
+      <p class="text-center text-dark">Goldfish</p>
+    </div>
+    <div>
+      <img data-src="../assets/images/jellyfish.jpg" class="lazyload text-center" alt="Jellyfish">
+      <p class="text-center text-dark">Jellyfish</p>
+    </div>
+  </div>
+  <!-- ****** AQUATICS IMAGES END ****** -->
+</section>
+<!-- ****** FISHES SECTION END ****** -->
+
+<!-- ****** FISHES IN TABLE ****** -->
+<section id="aquatic-table" class="p-3">
+  <h1 class="text-center my-4">AQUATICS IN TABLE-NEXUS AQUARIUM</h1>
+  <div class="table-div">
+    <table>
+      <tr>
+        <th>Common name(s)</th>
+        <th>Binomial name</th>
+        <th>Wild/Cultivated</th>
+        <th>Count</th>
+        <th>Endangered</th>
+      </tr>
+      <tr>
+        <td>Alaska Pollock</td>
+        <td>Theragra chalcogramma</td>
+        <td>Wild</td>
+        <td>20</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Argentine Hake</td>
+        <td>Merluccius hubbsi</td>
+        <td>Wild</td>
+        <td>67</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Carpet Shell</td>
+        <td>Ruditapes decussatus</td>
+        <td>Cultivated</td>
+        <td>21</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Bigeye tuna</td>
+        <td>Thunnus obesus</td>
+        <td>Wild</td>
+        <td>45</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Bighead Carp</td>
+        <td>Hypophthalmichthys nobilis</td>
+        <td>Cultivated</td>
+        <td>18</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Blue whiting</td>
+        <td>Micromesistius poutassou</td>
+        <td>Wild</td>
+        <td>94</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Bombay duck</td>
+        <td>Harpadon nehereus</td>
+        <td>Wild</td>
+        <td>76</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Bonga shad</td>
+        <td>Ethmalosa fimbriata</td>
+        <td>Wild</td>
+        <td>22</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Northern prawn</td>
+        <td>Pandalus borealis</td>
+        <td>Wild</td>
+        <td>51</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>American Seac Scallop</td>
+        <td>Placopeclen magnellanicus</td>
+        <td>Wild</td>
+        <td>15</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Asian Swamp Eel</td>
+        <td>Monopterus albus</td>
+        <td>Cultivated</td>
+        <td>5</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Blus swimming crab</td>
+        <td>Portunus pelagicus</td>
+        <td>Wild</td>
+        <td>11</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Albacore</td>
+        <td>Thunnus alalunga</td>
+        <td>Wild</td>
+        <td>40</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Milkfish</td>
+        <td>Chanos chanos</td>
+        <td>Cultivated</td>
+        <td>59</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Catfish</td>
+        <td>Siluriformes</td>
+        <td>Cultivated</td>
+        <td>10</td>
+        <td>No</td>
+      </tr>
+    </table>
+  </div>
+  <center><a class="mt-3" href="#!/gallery#aquatic-table-top">See more</a></center>
+</section>
+<!-- ****** FISHES IN TABLE END ****** -->
+
+
+<!-- ****** HOME CONTACT SECTION ****** -->
+<section id="home-contact">
+  <div class="home-contact-inner d-md-flex align-items-center justify-content-evenly">
+    <div class="home-contact-text">
+      <h1>Contact</h1>
+      <p>Send Us a Message, Leave Us Fedback, Let Us Know how we are doing or give us suggestions.  We would love to hear from you. </p>
+      <div class="contact-icons">
+        <i class="fa fa-phone mx-2" aria-hidden="true"></i>
+        <span class="me-5">Phone Number: <div><a href="tel: +2349010750893" class="text-white">+234 901 075 0893</a></div></span>
+      </div>
+      <div class="contact-icons my-3">
+        <i class="fa fa-envelope mx-2" aria-hidden="true"></i>
+        <span class="me-5">Email: <div><a href="mailto:support.nexusaquarium@gmail.com" class="text-white">support.nexusaquarium@gmail.com</a></div></span>
+      </div>
+    </div>
+    <div class="home-contact-form p-3">
+      <h2 class="mb-3 text-center">WRITE TO US</h2>
+      <form action="https://formspree.io/f/xqknbvyk" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+        <label for="message">Leave a Meaasge</label>
+      <textarea name="message" id="message" cols="30" rows="2" required></textarea>
+      <center><input type="submit" value="Send"></center>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- ****** HOME CONTACT SECTION ****** -->

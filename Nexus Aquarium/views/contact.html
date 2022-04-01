@@ -1,0 +1,104 @@
+<!-- ****** THE BELOW DIV IS USED IN THE ROUTING TO ENABLE EASY NAVIGATION TO SCROLL BACK TO THE TOP ****** -->
+<div id="contact-top" style="height: 20px;"></div>
+
+<!-- ****** FEEDBACK FORM ****** -->
+<section id="feedback-section">
+    <h2 class="text-center mb-5">Feedback</h2>
+    <div class="home-contact-form main-contact-form p-3">
+      <p class="my-5 text-center">Let us know how we are doing</p>
+        <form action="https://formspree.io/f/xpzbrgqo" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <label for="phone-number">Phone Number</label>
+              <input type="number" name="phone-number" id="phone-number" required>
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+          </div>
+          <select class="form-select" required name="last-visit">
+            <option selected value="">When was your last visit?</option>
+            <option>0-3 months</option>
+            <option> > 3 momths</option>
+            <option> > 6 months</option>
+          </select>
+          <label for="name">Subject/Complaints</label>
+          <input type="text" name="subject" id="name" required>
+          <label for="message">Leave a Meaasge</label>
+        <textarea name="message" id="message" cols="30" rows="2" required></textarea>
+        <center><input type="submit" value="Send"></center>
+        </form>
+      </div>
+</section>
+    <!-- ****** FEEDBACK FORM ENDS ****** -->
+
+
+    <!-- ****** LOCATION ****** -->
+    <section id="location">
+      <div class="d-md-flex align-items-center justify-content-evenly">
+        <div class="location-text text-center p-3 d-flex align-items-center justify-content-center">
+            <div>
+              <i class="fa fa-map-marker fa-3x text-center" aria-hidden="true" style="color: var(--blue);"></i>
+              <p class="text-center">Location</p>
+              <address class="text-center">
+                Nexus Aquarium is located at Washington D.C, United States of America. <br>
+                You can get directions via the map.
+              </address>
+            </div>
+        </div>
+        <div style="width: 100%;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5553352.315124828!2d-125.36954996791285!3d47.18531057573078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485e5ffe7c3b0f9%3A0x944278686c5ff3ba!2sWashington%2C%20USA!5e0!3m2!1sen!2sng!4v1646962738134!5m2!1sen!2sng" class="map-location" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+        </div>
+      </div>
+      </section>
+      <!-- ****** LOCATION ENDS ****** -->
+
+
+    <!-- ****** THE SECTION BELOW IS A COPY OF THE CONTACT SECTION AVAILABLE IN THE HOME PAGE ****** -->
+    <section id="home-contact">
+      <div class="home-contact-inner d-md-flex align-items-center justify-content-evenly">
+        <div class="home-contact-text">
+          <h1>Contact</h1>
+          <p>Send Us a Message, Leave Us Fedback, Let Us Know how we are doing or give us suggestions.  We would love to hear from you. </p>
+          <div class="contact-icons">
+            <i class="fa fa-phone mx-2" aria-hidden="true"></i>
+            <span class="me-5">Phone Number: <div><a href="tel: +2349010750893" class="text-white">+234 901 075 0893</a></div></span>
+          </div>
+          <div class="contact-icons my-3">
+            <i class="fa fa-envelope mx-2" aria-hidden="true"></i>
+            <span class="me-5">Email: <div><a href="mailto:support.nexusaquarium@gmail.com" class="text-white">support.nexusaquarium@gmail.com</a></div></span>
+          </div>
+          <div class=" contact-icons">
+            <span class=" text-white">Our Social Media: </span>
+                <i class="fa fa-facebook-square mx-1"></i>
+                <a href="https://twitter.com/SuperheroJT" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/superherojt/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/ademola-thompson-455982225/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin mx-1"></i></a>
+                <a href="http://wa.me/2349010750893" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp mx-1"></i></a>
+          </div>
+        </div>
+        <div class="home-contact-form p-3">
+          <h2 class="mb-3 text-center">WRITE TO US</h2>
+          <form action="https://formspree.io/f/xqknbvyk" method="POST">
+            <label for="contact-name">Name</label>
+            <input type="text" name="contact-name" id="name" required>
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <label for="contact-number">Phone Number</label>
+                <input type="number" name="contact-number" id="phone-number" required>
+              </div>
+              <div>
+                <label for="contact-email">Email Address</label>
+                <input type="email" name="contact-email" id="email" required>
+              </div>
+            </div>
+            <label for="contact-message">Leave a Meaasge</label>
+          <textarea name="contact-message" id="message" cols="30" rows="2" required></textarea>
+          <center><input type="submit" value="Send"></center>
+          </form>
+        </div>
+      </div>
+    </section>
